@@ -172,9 +172,7 @@ nav ul{
 .section-three div:last-of-type{
     flex-basis: 40%;
     display: flex;
-    align-items: center;
-    display: grid;
-    gap: 10%;
+    flex-direction: column;
 }
 .section-three input{
     height: 40px;
@@ -191,6 +189,7 @@ nav ul{
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 700;
+    margin-top: 3%;
 }
 .section-three input:last-of-type:hover{
     cursor: pointer;
@@ -245,8 +244,14 @@ li:hover , .media img:hover{
     .section-one, .section-two{
         flex-direction: column-reverse;
     }
+    .quote , a, h1{
+        align-self: center;
+        text-align: center;
+    }
     .section-three{
         flex-direction: column;
+        align-items: stretch;
+        padding: 0%;
     }
     .section-three div:first-child{
         text-align: center;
@@ -259,27 +264,32 @@ li:hover , .media img:hover{
     .section-three div:last-of-type{
         display: flex;
         flex-direction: column;
+        margin: 0% 8% 0% 5%;
+    }
+    .section-three input:first-child{
+        max-width: 100%;
     }
     .section-three input:last-of-type{
         max-width: 100%;
     }
     footer{
         align-items: flex-start;
-        align-items: center;
-        justify-content: center;
     }
     footer div:first-child{
         margin: 5% 0% 0%;
     }
+    .logo2{
+        margin: 0% 30%;
+    }
     .footer-div2{
         flex-direction: column;
-        align-self: center;
-        margin: 0% 0% 10%;
+        margin: 0% 10% 10%;
     }
     li{
         margin: 3% 0%;
     }
     .media{
         width: 20%;
+        align-self: flex-end;
     }
 }
