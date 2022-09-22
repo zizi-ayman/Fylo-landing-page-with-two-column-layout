@@ -9,6 +9,8 @@ body{
     min-height: 100vh;
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
+    color: hsl(243, 87%, 12%);
+    background-color: hsl(240, 75%, 98%);
 }
 ul{
     list-style: none;
@@ -19,14 +21,15 @@ ul{
 
 header{
     display: flex;
-    margin: 2% 3%;
+    padding: 2% 3%;
     font-family: 'Raleway', sans-serif;
+    background-color: white;
 }
 header div{
-    flex-basis: 70%;
+    flex-basis: 80%;
 }
 nav{
-    flex-basis: 30%;
+    flex-basis: 20%;
 }
 nav ul{
     display: flex;
@@ -35,10 +38,10 @@ nav ul{
 
 
 /* --------------section-one-------------*/
-
 .section-one{
     display: flex;
-    margin: 0% 3%;
+    padding: 0% 3%;
+    background-color: white;
     font-family: 'Raleway', sans-serif;
     padding-bottom: 8%;
 }
@@ -83,30 +86,35 @@ nav ul{
 }
 
 /* --------------section-two-------------*/
-
+.bg-curve{
+    background-color: white;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
 .section-two{
     display: flex;
     padding-bottom: 8%;
     padding: 10% 3%;
-    background-image: url("../img/bg-curve-desktop.svg");
-    background-repeat: no-repeat;
-    background-color: hsl(240, 75%, 98%);
 }
-.section-two div:first-child{
+.section-two-div{
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.section-two div:first-child h1{
+.section-two-div h1{
     font-size: 2.6rem;
     font-family: 'Raleway', sans-serif;
+}
+.section-two-div p{
+    margin-top: 2%;
 }
 .section-two a{
     color: hsl(170, 45%, 43%);
     text-decoration: none;
     border-bottom: 1px solid hsl(170, 45%, 43%);
     max-width: fit-content;
+    margin: 2% 0% 5%;
 }
 .section-two a:hover{
     cursor: pointer;
@@ -158,6 +166,7 @@ nav ul{
     margin: 3%;
 }
 .section-three div:first-child p{
+    margin-top: 2%;
     max-width: 65%;
 }
 .section-three div:last-of-type{
@@ -172,6 +181,7 @@ nav ul{
 }
 .section-three input:first-child{
     max-width: 90%;
+    padding: 0 3%;
 }
 .section-three input:last-of-type{
     max-width: 40%;
@@ -265,9 +275,6 @@ li:hover , .media img:hover{
         flex-direction: column;
         align-self: center;
         margin: 0% 0% 10%;
-    }
-    ul{
-        margin: 7% 0%;
     }
     li{
         margin: 3% 0%;
